@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UnitX Solutions</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    body { 
+	  background: #111; color: white; font-family: sans-serif; }
+      .navbar { background: #000; }
+      .footer { background: #000; text-align: center; padding: 1rem; margin-top: 2rem; font-size: 0.9rem; }
+      .footer a { color: #0d6efd; margin: 0 10px; text-decoration: none; }
+      .social-icons a { color: white; margin: 0 10px; font-size: 1.3rem; }
+      .navbar {
+      background-color: #000;
+    }
+    .hero {
+      background-color: #1a1a1a;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+    .hero img {
+      width: 150px;
+      margin-bottom: 1rem;
+    }
+    .section {
+      padding: 2rem 1rem;
+    }
+    .footer {
+      background-color: #000;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    a {
+      color: #0d6efd;
+    }
+    .form-section {
+      background-color: #1e1e1e;
+      padding: 2rem;
+      border-radius: 10px;
+    }
+    .services-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+    .service-card {
+      background-color: #2a2a2a;
+      padding: 1.5rem;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .service-card:hover {
+      transform: scale(1.03);
+      background-color: #333;
+    }
+    .service-card h5 {
+      margin-top: 1rem;
+    }
+    .service-card i {
+      font-size: 2rem;
+      color: #0d6efd;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark px-4">
+    <a class="navbar-brand" href="#">UnitX Solutions</a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+		<li class="nav-item"><a class="nav-link" href="index.html">Startseite</a></li>
+		<li class="nav-item"><a class="nav-link" href="https://unitxsolutions.de/unitxfileportal/login.php">Fileportal</a></li>
+        <li class="nav-item"><a class="nav-link" href="impressum.html">Impressum</a></li>
+        <li class="nav-item"><a class="nav-link" href="datenschutz.html">Datenschutz</a></li>
+        <li class="nav-item"><a class="nav-link" href="agb.html">AGB</a></li>
+        <li class="nav-item"><a class="nav-link" href="widerruf.html">Widerruf</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <img src="unitx-logo.png" alt="UnitX Logo">
+    <h1>Willkommen bei UnitX Solutions</h1>
+    <p>Ihr Partner für Steuergeräte-Reparatur, Softwareanpassungen & Codierungen</p>
+  </header>
+
+  <section class="section container" id="leistungen">
+    <h2>Unsere Leistungen</h2>
+    <div class="services-list">
+      <div class="service-card">
+        <i class="fas fa-tools"></i>
+        <h5>Steuergeräte-Reparatur</h5>
+        <p>Reparatur von Steuergeräten aller Art – zuverlässig und schnell.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-microchip"></i>
+        <h5>Software-Anpassungen</h5>
+        <p>Stage 1/2 Tuning, u.v.m. nach Kundenwunsch.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-code"></i>
+        <h5>Codierungen</h5>
+        <p>Individuelle Anpassungen & Codierungen für Ihr Fahrzeug.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container" id="ueberuns">
+    <h2>Über uns</h2>
+    <p>UnitX Solutions ist Ihr verlässlicher Partner für die Diagnose, Reparatur und Optimierung von Steuergeräten. Mit fundiertem Know-how aus der Kfz-Branche bieten wir maßgeschneiderte Lösungen und schnellen Service.</p>
+  </section>
+
+  <section class="section container" id="kontakt">
+    <h2>Kontakt</h2>
+    <p><strong>Telefon:</strong> <a href="tel:+491731681720">0173 16 81 720</a><br>
+    <strong>WhatsApp:</strong> <a href="https://wa.me/491731681720">Nachricht senden</a><br>
+    <strong>E-Mail:</strong> <a href="mailto:info@unitxsolutions.de">info@unitxsolutions.de</a><br>
+    <strong>Öffnungszeiten:</strong> Täglich von 17:30 – 21:30 Uhr</p>
+						   </strong> Sonntags geschlossen!</p>
+
+    <div class="form-section mt-4">
+      <h4>Kontaktformular</h4>
+      <form method="POST" action="send-mail.php">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">E-Mail</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Nachricht</label>
+          <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Senden</button>
+      </form>
+    </div>
+  </section>
+
+    <footer class="footer">
+    <div>
+      <p>&copy; 2025 UnitX Solutions</p>
+      <p>
+        <a href="impressum.html">Impressum</a> |
+        <a href="datenschutz.html">Datenschutz</a> |
+        <a href="agb.html">AGB</a> |
+        <a href="widerruf.html">Widerruf</a>
+      </p>
+      <div class="social-icons">
+        <a href="https://www.tiktok.com/@yourprofil" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.instagram.com/yourprofil" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/yourprofil" target="_blank"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
